@@ -1,0 +1,61 @@
+A)
+programa {
+  funcao inicio() {
+      real nota1, nota2, media
+
+      escreva("Digite a nota 1 : ")
+
+      leia(nota1)
+
+       escreva("Digite a nota 2 : ")
+
+      leia(nota2)
+
+      media=(nota1 + nota2) / 2
+
+      escreva("A Média do Aluno é igual a ", media)
+  }
+}
+B)
+programa {
+  funcao inicio() {
+    inteiro numero
+
+      escreva("Digite um numero inteiro : ")
+
+      leia(numero)
+
+      escreva("\nO numero é igual a ", numero)
+
+      numero = numero - 1
+
+      escreva("\nO antecessor é igual a ", numero)
+
+      numero = numero + 2
+
+      escreva("\nO sucessor é igual a ", numero)
+
+      escreva("\n\n")
+  }
+}
+C)
+programa {
+  funcao inicio() {
+    real reais, dolares
+
+      escreva("Digite uma quantia : ")
+
+      leia(reais)
+
+      escreva("\n A quantia em reais é igual a ", reais)
+       se(reais < 5.15){
+        escreva("\n Valor menor que 5.15")
+       }senao{
+      dolares = reais / 5.15
+
+     escreva("\n A quantia em dólares é igual a ", dolares)
+
+      escreva("\n\n")
+       }
+  }
+}
