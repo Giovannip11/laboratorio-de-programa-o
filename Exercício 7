@@ -1,0 +1,36 @@
+1)
+programa {
+  funcao inicio() {
+    inteiro numero, resultado
+    escreva("Escreva um numero inteiro: ")
+    leia(numero)
+    resultado = numero -1
+    escreva("O antecessor é: ",resultado)
+    resultado = numero + 1
+    escreva("\nO sucessor é : ",resultado)
+  }
+}
+2)
+programa {
+  funcao inicio() {
+    real numero,resultado
+    escreva("Digite um número real: ")
+    leia(numero)
+    
+    resultado = numero *2
+    escreva("O seu dobro é: ", resultado)
+    resultado = numero/3
+    escreva("\nA sua terça parte é: ", resultado)
+  }
+}
+3)
+programa {
+  funcao inicio() {
+    real reais,dolares
+    escreva("Escreva a quantidade de reais que voce tem na carteira: ")
+    leia(reais)
+    dolares = reais/5.15
+    escreva("A quantidade de doláres que voce pode comprar é: ",dolares)
+  }
+}
+4)
