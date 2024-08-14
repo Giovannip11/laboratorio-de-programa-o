@@ -34,3 +34,39 @@ programa {
   }
 }
 4)
+programa {
+  funcao inicio() {
+    real H,L,area,quatidadeTinta
+    escreva("Escreva a altura em Metros: ")
+    leia(H)
+    escreva("\nEscreva a largura em Metros: ")
+    leia(L)
+    area=H*L
+    quatidadeTinta = area /2
+    escreva("Vai ser necessario ",quatidadeTinta," litros de tinta")
+    
+       
+  }
+}
+5)
+programa {
+  funcao inicio() {
+    real preco,promocao
+    escreva("Escreva o valor do produto: ")
+    leia(preco)
+    promocao = preco - (preco*0.05)
+    escreva("A promocao com 5% ficou:R$ ",promocao)
+  }
+}
+6)
+programa {
+  funcao inicio() {
+    real salario, salarioComAumento
+    escreva("Escreva o salário do funcionário:")
+    leia(salario)
+    salarioComAumento = salario + (salario*0.15)
+    escreva("O aumento foi de: ",salarioComAumento)
+  }
+}
+
+
