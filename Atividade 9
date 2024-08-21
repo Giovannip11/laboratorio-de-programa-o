@@ -1,0 +1,101 @@
+1)
+programa {
+  funcao inicio() 
+  {
+    inteiro idade
+    escreva("Digite sua idade em anos: ")
+    leia(idade)
+    se(idade>=18)
+    {
+       escreva("Você é maior de idade")
+    }
+    senao
+    {
+      escreva("Você é menor de idade")
+    }
+    
+  }
+}
+2)
+programa {
+  funcao inicio() 
+  {
+    inteiro nota
+    escreva("Escreva a nota do aluno de 1 a 10: ")
+    leia(nota)
+
+    se(nota>=7)
+    {
+      escreva("Parabéns o aluno foi aprovado")
+    }
+    se(nota<7 e nota >=0)
+    {
+      escreva("O aluno foi reprovado")
+    }
+    se(nota >10 ou nota <0)
+    {
+      escreva("Nota inválida")
+    }
+  }
+}
+3)
+programa {
+  funcao inicio() 
+  {
+    inteiro numero
+    escreva("Digite um número inteiro:")
+    leia(numero)
+
+    se(numero % 2 ==0)
+    {
+         escreva("O número é par")
+    }
+    senao
+    {
+      escreva("O número é impar")
+    }
+    
+  }
+}
+4)
+programa {
+  funcao inicio() 
+  {
+    inteiro senha 
+
+    escreva("Digite sua senha: ")
+    leia(senha)
+
+    se(senha == 1234)
+    {
+      escreva("Senha correta")
+    }
+    senao
+    {
+      escreva("Senha incorreta")
+    }
+    
+  }
+}
+5)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro a,b
+    escreva("Digite o valor de A: ")
+    leia(a)
+    escreva("Digite o valor de B: ")
+    leia(b)
+    
+    se(a % b==0)
+    {
+     escreva("O número A é multiplo de B")
+    }
+    senao
+    {
+      escreva("O número A não é multiplo de B")
+    }
+
+  }
+}
