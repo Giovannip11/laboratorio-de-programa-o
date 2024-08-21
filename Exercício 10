@@ -1,4 +1,4 @@
-1)
+a)
 programa 
 {
   funcao inicio() 
@@ -24,13 +24,16 @@ programa
     
   }
 }
-2)
+b)
 programa 
 {
   funcao inicio() 
   {
     real nota1, nota2, mediaFinal
-    escreva("Escreva a do primeiro biemstre:")
+    escreva("Escreva a nota do aluno no primeiro biemstre:")
+    leia(nota1)
+    escreva("Escreva a nota do aluno no segundo bimestre:")
+    leia(nota2)
     
     mediaFinal=(nota1+nota2)/2
     
@@ -49,3 +52,38 @@ programa
     
   }
 }
+c)
+   programa {
+  funcao inicio() 
+  {
+   real largura, comprimento, area, perimetro 
+   escreva("Escreva a largura do terreno:")
+   leia(largura)
+   escreva("Escreva o comprimento do terreno:")
+   leia(comprimento)
+   
+   area = largura * comprimento
+   perimetro = (2*largura) + (2 * comprimento)
+
+   se(largura < 10 )
+   {
+    escreva("O terreno não e comercial")
+   }
+   senao
+   {
+    escreva("O terreno é comercial")
+       se(area < 100)
+   {
+    escreva("\nTERRENO POPULAR")
+   }
+   senao se(area>100 e area<500)
+   {
+    escreva("\nTERRENO MASTER")
+   }
+   senao
+   {
+    escreva("\nTERRENO VIP")
+   }
+   escreva("\nO perimetro do terreno é :",perimetro)
+   
+   }
