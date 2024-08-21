@@ -59,15 +59,16 @@ programa {
   }
 }
 4)
-programa {
+programa 
+{
   funcao inicio() 
   {
-    inteiro senha 
+    cadeia senha 
 
     escreva("Digite sua senha: ")
     leia(senha)
 
-    se(senha == 1234)
+    se(senha == "1234")
     {
       escreva("Senha correta")
     }
@@ -78,6 +79,7 @@ programa {
     
   }
 }
+
 5)
 programa 
 {
