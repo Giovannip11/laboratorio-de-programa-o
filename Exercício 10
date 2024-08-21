@@ -1,0 +1,51 @@
+1)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro a, b 
+    escreva("Escreva o valor para A: ")
+    leia(a)
+    escreva("Escreva o valor para B: ")
+    leia(b)
+
+    se(a > b)
+    {
+     escreva("A é maior que B")
+    }
+    senao se(b > a)
+    {
+      escreva("B é maior que A")
+    }
+    senao se (a == b)
+    {
+      escreva("A e B são iguais")
+    }
+    
+  }
+}
+2)
+programa 
+{
+  funcao inicio() 
+  {
+    real nota1, nota2, mediaFinal
+    escreva("Escreva a do primeiro biemstre:")
+    
+    mediaFinal=(nota1+nota2)/2
+    
+    se(mediaFinal<=4.9)
+    {
+      escreva("O aluno está reprovado")
+    }
+    senao se(mediaFinal>=5.0 e mediaFinal<=6.9)
+    {
+      escreva("O aluno está de recuperação")
+    }
+    senao
+    {
+      escreva("O aluno está aprovado")
+    }
+    
+  }
+}
