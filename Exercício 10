@@ -176,4 +176,38 @@ programa
     escreva("O maior produto é: ",maiorProduto)
   }
 }
+f)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro a,b,c,d, d1,d2
+    escreva("Digite 4 numeros inteiros:\n")
+    leia(a,b,c,d)
+
+    d1= a/b
+    d2= c/d
+    se(d1>3)
+    {
+      escreva("O resultado é: ",d1)
+    }
+    senao se(d1<=3)
+    {
+      se(d2>3)
+      {
+        escreva("O resultado é: ",d2)
+      }
+    }
+    se(d1>3 e d2 >3)
+    {
+     escreva("\nProdutos maiores que 3")
+    }
+    senao
+    {
+      escreva("\nPelo menos um dos produtos é menor que 3")
+    }
+
+
+  }
+}
 
