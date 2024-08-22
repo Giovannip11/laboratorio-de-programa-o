@@ -91,4 +91,89 @@ c)
   }
 }
 d)
+programa 
+{
+  funcao inicio() 
+  {
+    cadeia fun
+    inteiro salario, anos, novoSalario
+    caracter cargo 
+    escreva("Digite o nome do funcionário: ")
+    leia(fun)
+    escreva("Digite o salário que ele recebe: ")
+    leia(salario)
+    escreva("Digite o tempo que ele trablha na empresa: ")
+    leia(anos)
+    escreva("Digite que tipo de cargo ele está: ")
+    leia(cargo)
+    
+    
+    se(anos <=3)
+    {
+     novoSalario=salario + (salario*0.03)
+     escreva("O novo salário será: ",novoSalario)
+    
+     
+    }
+    senao se(anos>=3 e anos <10)
+    {
+      
+     novoSalario=salario + (salario*0.13)
+     escreva("O novo salário será: ",novoSalario)
+    }
+    senao
+    {
+     
+       novoSalario=salario + (salario*0.20)
+    }
+    se(cargo=='o')
+    {
+      novoSalario = novoSalario + (novoSalario*0.05)
+    }
+    
+    escreva("\nComo o funcionario é um operador há um aumento de 5%, logo o novo salario sera:", novoSalario)
+
+  }
+}
+e)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro a,b,c,d, r1,r2,r3,r4,r5,r6, maiorProduto
+    escreva("Digite 4 números inteiros:\n")
+    leia(a,b,c,d)
+
+    r1 = a*b
+    r2 = a*c 
+    r3 = a*d 
+    r4 = b*c 
+    r5 = b*d
+    r6 = c*d
+     
+    maiorProduto=r1
+    se(r2 > maiorProduto)
+    {
+     maiorProduto=r2
+    }
+     se(r3 > maiorProduto)
+    {
+      maiorProduto=r3
+    }
+     se(r4> maiorProduto)
+    {
+     maiorProduto=r4
+    }
+     se(r5>maiorProduto)
+    {
+      maiorProduto=r5
+    }
+     se(r6>maiorProduto)
+    {
+      maiorProduto=r6
+    }
+   
+    escreva("O maior produto é: ",maiorProduto)
+  }
+}
 
