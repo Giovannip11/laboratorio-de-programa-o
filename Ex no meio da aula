@@ -1,0 +1,38 @@
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro numero, soma=0
+
+    para(numero = 1;numero<=100;numero++)
+    {
+      soma = numero + soma
+      escreva("Soma atual:",soma,"\n")
+      
+     
+    }
+     soma = numero+soma
+    
+     
+
+    
+  }
+}
+programa 
+{
+  funcao inicio() 
+  {
+    cadeia senha = "admin123"
+    cadeia tentativa
+    
+    escreva("Digite sua senha:")
+    leia(tentativa)
+    enquanto(senha != tentativa)
+    {
+      escreva("Senha incorreta tente novamente: ")
+      leia(tentativa)
+    }
+    escreva("Senha correta,Bem vindo")
+    
+  }
+}
