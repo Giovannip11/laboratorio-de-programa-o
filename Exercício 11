@@ -1,0 +1,55 @@
+1)
+programa 
+{
+  funcao inicio()
+  {
+    inteiro numero=6
+    para(numero=6;numero<=11;numero++)
+    {
+      escreva("\n",numero)
+    }
+    
+  }
+}
+2)
+programa 
+{
+  funcao inicio() 
+  {
+   inteiro numero = 10
+   para(numero=10;numero>=3;numero--)
+   {
+     escreva("\n",numero)
+   }
+   escreva("\nAcabou!")
+  }
+
+}
+3)
+programa {
+
+  funcao inicio() 
+  {
+    inteiro numero=0
+    para(numero=0;numero<=18;numero=numero+3)
+    {
+      
+      escreva("\n",numero)
+    }
+    escreva("\nAcabou!")
+    
+  }
+}
+4)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro numero=100
+    para(numero=100;numero>0;numero=numero-5)
+    {
+      escreva("\n",numero)
+    }
+  }
+}
+
