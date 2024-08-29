@@ -52,4 +52,92 @@ programa
     }
   }
 }
+5)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro numero
+    inteiro i
+   
+    
+    
+    faca
+    {
+      escreva("Digite um número inteiro: ")
+      leia(numero)
+    }
+    enquanto(numero<=0)
+    
+      
+      para( i=1;i<=numero;i++)
+      {
+         escreva("\n",i)
+        
+      }
+     
+      
+    
+  }
+}
+6)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro numero 
+
+    
+     para(numero=30;numero>=0;numero--)
+     {
+      escreva("\n",numero)
+      se(numero%4==0)
+      { 
+       escreva("[",numero,"]")
+      }
+     }
+    
+   
+
+  }
+}
+7)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro valorInicial,ultimoValor,incremento
+    escreva("Digite o valor inicial:\n")
+    leia(valorInicial)
+    escreva("Digite o valor final:\n")
+    leia(ultimoValor)
+    escreva("Digite o incremento:\n")
+    leia(incremento)
+    
+    para(valorInicial;valorInicial<=ultimoValor;valorInicial=valorInicial+incremento)
+    {
+      escreva("\n",valorInicial)
+
+    }
+    
+  }
+}
+8)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro n,soma=0
+    para(n=6;n<=100;n=n+2)
+    {
+      
+      escreva("\n",n)
+      soma=soma+n
+    }
+    
+    
+    escreva("\n soma total:",soma)
+    
+  }
+}
 
