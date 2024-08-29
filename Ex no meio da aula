@@ -11,8 +11,8 @@ programa
       
      
     }
-     soma = numero+soma
-    
+     
+     escreva("A soma dos números de 1 a 100 é: ",soma)
      
 
     
