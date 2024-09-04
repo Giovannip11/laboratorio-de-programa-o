@@ -51,3 +51,37 @@ programa
     retorne areaRetangulo
   }
 }
+2)
+programa 
+{
+  funcao inicio() 
+  { inteiro numero
+  escreva("Digite um numero inteiro: \n")
+  leia(numero)
+  inteiro primo = ehPrimo(numero)
+  se(primo==0)
+  {
+    escreva("Não é primo")
+  }
+  senao
+  {
+    escreva("É primo")
+  }
+  }
+  funcao inteiro ehPrimo(inteiro num)
+  {
+    inteiro i
+   se (num<2)
+   {
+    retorne 0
+   }
+   para(i=2;i<=num/2;i++)
+   {
+     se(num%i==0)
+     {
+      retorne 0
+     }
+   }
+   retorne  1
+  }
+}
