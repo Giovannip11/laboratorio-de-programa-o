@@ -1,0 +1,53 @@
+1)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro i
+    escreva("Qual operação deseja fazer\n 1:Area de um circulo\n 2:Area de um quadrado\n 3:Area de um retangulo\n")
+    leia(i)
+
+    se(i==1)
+    {
+      real raio
+      escreva("Digite o valor do raio:\n")
+      leia(raio)
+      real areaCirulo=calcularAreaCirculo(raio)
+      escreva("A area do circulo e: ",areaCirulo)
+    }
+    senao se(i==2)
+    {
+      real lado
+      escreva("Digite o valor do lado:\n")
+      leia(lado)
+      real areaQuadrado=calcularAreaQuadrado(lado)
+      escreva("A area do quadro e: ",areaQuadrado)
+    }
+    senao se(i==3)
+    {
+      real lado,altura
+      escreva("Digite o valor do lado:\n")
+      leia(lado)
+      escreva("Digite o valor da altura:\n")
+      leia(altura)
+      real areaRetangulo=calcularAreaRetangulo(lado,altura)
+      escreva("A area do retangulo e: ",areaRetangulo)
+    }
+  }
+  funcao real calcularAreaCirculo(real r )
+  {
+     real pi=3.14
+     real areaCirulo = pi * (r*r)
+     retorne areaCirulo
+  }
+  funcao real calcularAreaQuadrado(real l)
+  {
+    real areaQuadrado = l*l
+    retorne areaQuadrado
+  }
+  funcao real calcularAreaRetangulo(real l, real h)
+  {
+    real areaRetangulo = l*h
+    retorne areaRetangulo
+  }
+}
