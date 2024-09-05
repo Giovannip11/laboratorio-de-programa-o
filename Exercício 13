@@ -1,0 +1,28 @@
+1)
+programa 
+{
+  inclua biblioteca Matematica --> mat
+  funcao inicio() 
+  {
+    inteiro n
+    real nReais
+    real arredondamento
+
+    
+    escreva("Digite um valor de n:\n")
+    leia(n)
+    para(inteiro i=0;n>i;i++)
+    {
+       escreva("Digite números reais:\n")
+       leia(nReais)
+    }
+     escreva("Os números reais arredondados são:\n")
+     para(inteiro i=0;i<n;i++)
+     {
+        arredondamento = mat.arredondar(nReais,1)
+        escreva("Arredondamento:\n",arredondamento)
+     }
+
+    
+  }
+}
