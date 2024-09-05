@@ -85,3 +85,59 @@ programa
    retorne  1
   }
 }
+3)
+programa 
+{
+  funcao inicio() 
+  {
+    inteiro opcao
+    real temperatura, resultado
+    
+    escreva("Escolha a conversão de temperatura que deseja:\n")
+    escreva("1- Celsius para Fahrenheit\n")
+    escreva("2- Fahrenheit para Kelvin\n")
+    escreva("3- Kelvin para Celsius\n")
+
+    escreva("Digite a opção desejada: ")
+    leia(opcao)
+    
+    escreva("Digite a temperatura: ")
+    leia(temperatura)
+    
+    escolha(opcao)
+    {
+      caso 1:
+        resultado = celsiusParaFahrenheit(temperatura)
+        escreva("A temperatura em Fahrenheit é: ", resultado)
+        pare
+        
+      caso 2:
+        resultado = farenheitParaKelvin(temperatura)
+        escreva("A temperatura em Kelvin é: ", resultado)
+        pare
+        
+      caso 3:
+        resultado = kelvinParaCelsius(temperatura)
+        escreva("A temperatura em Celsius é: ", resultado)
+        pare
+        
+      caso contrario:
+        escreva("Opção inválida.")
+        pare
+    }
+  }
+  funcao real celsiusParaFahrenheit(real celsius)
+  {
+    retorne (celsius * 9 / 5) + 32
+  }
+  funcao real farenheitParaKelvin(real farenheit)
+  {
+    retorne (farenheit - 32) * 5 / 9 + 273.15
+  }
+  funcao real kelvinParaCelsius(real kelvin)
+  {
+    retorne kelvin - 273.15
+  }
+}
+
+
