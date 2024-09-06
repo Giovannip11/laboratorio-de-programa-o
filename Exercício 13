@@ -5,24 +5,24 @@ programa
   funcao inicio() 
   {
     inteiro n
-    real nReais
+    real vetorReais[100] // Vetor para armazenar os números reais
     real arredondamento
 
-    
     escreva("Digite um valor de n:\n")
     leia(n)
-    para(inteiro i=0;n>i;i++)
-    {
-       escreva("Digite números reais:\n")
-       leia(nReais)
-    }
-     escreva("Os números reais arredondados são:\n")
-     para(inteiro i=0;i<n;i++)
-     {
-        arredondamento = mat.arredondar(nReais,1)
-        escreva("Arredondamento:\n",arredondamento)
-     }
 
+    para(inteiro i=0;i<n;i++)
+    {
+       escreva("Digite um número real:\n")
+       leia(vetorReais[i]) // Armazena cada número no vetor
+    }
     
+    escreva("Os números reais arredondados são:\n")
+    para(inteiro i=0;i<n;i++)
+    {
+        arredondamento = mat.arredondar(vetorReais[i],2) 
+        escreva("Arredondamento: ", arredondamento, "\n") 
+    }
   }
 }
+
