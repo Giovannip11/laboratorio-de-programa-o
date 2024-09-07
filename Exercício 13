@@ -5,24 +5,102 @@ programa
   funcao inicio() 
   {
     inteiro n
-    real vetorReais[100] // Vetor para armazenar os números reais
-    real arredondamento
-
-    escreva("Digite um valor de n:\n")
+    real numero 
+    escreva("Escreva um número inteiro:")
     leia(n)
 
+    real numero[n]
     para(inteiro i=0;i<n;i++)
     {
-       escreva("Digite um número real:\n")
-       leia(vetorReais[i]) // Armazena cada número no vetor
+      escreva("Digite um número real: ")
+      leia(numero[i])
     }
-    
-    escreva("Os números reais arredondados são:\n")
-    para(inteiro i=0;i<n;i++)
+    para(inteiro i=1;i<n;i++)
     {
-        arredondamento = mat.arredondar(vetorReais[i],2) 
-        escreva("Arredondamento: ", arredondamento, "\n") 
+      escreva("Número: ",i+1," arredondados: ",mat.arredondar(numero[i],1),"\n")
     }
+
   }
+}
+2)
+programa
+{
+    inclua biblioteca Matematica --> mat
+
+    funcao inicio()
+    {
+        inteiro n, q
+        
+
+        escreva("Digite um número inteiro: ")
+        leia(n)
+
+        
+        se (n % 2 == 0)
+        {
+            q = n / 2
+            real numeros[q] 
+
+            
+            para (inteiro i = 0; i < q; i++)
+            {
+                escreva("Digite um número real: ")
+                leia(numeros[i])
+            }
+
+            
+            para (inteiro i = 0; i < q; i++)
+            {
+                escreva("A raiz quadrada de ", numeros[i], " é: ", mat.raiz(numeros[i],2), "\n")
+            }
+        }
+        senao 
+        {
+            q = n * 2
+            real numeros[q] 
+
+           
+            para (inteiro i = 0; i < q; i++)
+            {
+                escreva("Digite um número real: ")
+                leia(numeros[i])
+            }
+
+            
+            para (inteiro i = 0; i < q; i++)
+            {
+                escreva("A raiz cúbica de ", numeros[i], " é: ", mat.raiz(numeros[i],3), "\n")
+            }
+        }
+    }
+}
+3)
+programa
+{
+    inclua biblioteca Texto --> txt
+    
+    funcao inicio()
+    {
+        
+        cadeia nome
+        
+        
+        enquanto (verdadeiro)
+        {
+            escreva("Digite um nome (ou 'fim' para encerrar): ")
+            leia(nome)
+            
+            
+            se (txt.caixa_baixa(nome) == "fim")
+            {
+                pare
+            }
+            
+            
+            escreva("Nome em caixa alta: ", txt.caixa_alta(nome), "\n")
+        }
+        
+        escreva("Programa encerrado.")
+    }
 }
 
