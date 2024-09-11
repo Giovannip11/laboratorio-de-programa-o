@@ -1,0 +1,6 @@
+1)
+name = input("Digite seu nome: ")
+print (f'Olá ,{name}')
+2)
+numero = input("Digite um numero: ")
+print(f'{numero}'
