@@ -2,5 +2,17 @@
 name = input("Digite seu nome: ")
 print (f'Olá ,{name}')
 2)
-numero = input("Digite um numero: ")
-print(f'{numero}'
+numero = int (input('Digite um numero: '))
+print ('numero e:',numero)
+3)
+numero1 = int (input('Digite o primeiro numero:'))
+numero2= int (input('Digite o segundo numero:'))
+numero3= int (input('Digite o terceiro numero:'))
+
+print(numero1,numero2,numero3,sep='/')
+4)
+string1 = input('digite uma frase:')
+string2 = input('digite uma segunda frase:')
+
+print(string1 + string2)
+print(string1 + '\n'+string2)
