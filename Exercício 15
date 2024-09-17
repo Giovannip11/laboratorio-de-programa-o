@@ -8,3 +8,9 @@ notaIng = int(input("Digite a nota de ingles do aluno: "))
 media = (notaMat+notaIng+notaPort+notaGeo+notaHist)/5
 
 print('A media do aluno e: ',media)
+2)
+ganhoPorHora = int (input('Digite o quanto voce ganha por hora: '))
+numeroDeHorasMes = int(input('Digite o numero de horas que voce trabalha por mes: '))
+
+ganhoTotalMes = ganhoPorHora * numeroDeHorasMes
+print('O total que voce ganha e: ',ganhoTotalMes)
