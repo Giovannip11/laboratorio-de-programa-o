@@ -1,0 +1,10 @@
+1)
+notaMat = int(input("Digite a nota de matemática do aluno: "))
+notaHist = int(input("Digite a nota de historia do aluno: "))
+notaGeo = int(input("Digite a nota de geografia do aluno: "))
+notaPort = int(input("Digite a nota de portugues do aluno: "))
+notaIng = int(input("Digite a nota de ingles do aluno: "))
+
+media = (notaMat+notaIng+notaPort+notaGeo+notaHist)/5
+
+print('A media do aluno e: ',media)
