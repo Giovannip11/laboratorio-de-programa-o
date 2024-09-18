@@ -18,3 +18,84 @@ if numero3>maior:
     maior = numero3
 
 print(maior)
+3)
+numero1 = int(input('Digite o numero(1): '))
+numero2 = int(input('Digite o numero(2): '))
+numero3 = int(input('Digite o numero(3): '))
+
+maior = numero1
+if numero2 >maior:
+    maior=numero2
+if numero3>maior:
+    maior=numero3
+
+menor =numero1
+if numero2<menor:
+    menor=numero2
+if numero3<menor:
+    menor=numero3
+
+print('Maior numero e:',maior)
+print('Menor numero e:',menor)
+4)
+nota1= int(input('Digite a primeira nota:'))
+nota2= int(input('Digite a segunda nota:'))
+
+media = (nota1 + nota2)/2
+
+if media >=7 and media <10:
+    print('Aluno aprovado')
+elif media <7:
+    print('Aluno reprovado')
+if media == 10:
+    print('Aluno aprovado com distinção')
+5)
+produto1 = int(input('Digite o preço do primeiro produto: '))
+produto2 = int(input('Digite o preço do segundo produto: '))
+produto3 = int(input('Digite o preço do terceiro produto: '))
+
+
+menorPreco = produto1
+produtoMenor = "Produto 1"
+
+
+if produto2 < menorPreco:
+    menorPreco = produto2
+    produtoMenor = "Produto 2"
+
+
+if produto3 < menorPreco:
+    menorPreco = produto3
+    produtoMenor = "Produto 3"
+
+
+print(f'O {produtoMenor} tem o menor preço, que é R$ {menorPreco}.')
+
+6)numero1 = int(input('Digite um numero(1): '))
+numero2 = int(input('Digite um numero(2): '))
+numero3 = int(input('Digite um numero(3): '))
+
+maior = numero1
+if numero2 > maior:
+    maior = numero2
+if numero3 > maior:
+    maior = numero3
+
+
+menor = numero1
+if numero2 < menor:
+    menor = numero2
+if numero3 < menor:
+    menor = numero3
+
+
+if (numero1 != maior and numero1 != menor):
+    medio = numero1
+elif (numero2 != maior and numero2 != menor):
+    medio = numero2
+else:
+    medio = numero3
+
+
+print(f'Ordem decrescente: {maior}, {medio}, {menor}')
+
