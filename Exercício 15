@@ -34,4 +34,82 @@ elif operacao ==4 :
 else:
     print('Numero inválido!')
 4)
+f= float(input("Digite a temperatura em farenheit: "))
+
+c=5*((f-32)/9)
+print(c)
+5)
+numeroInt1 = int(input('Digite um numero inteiro:'))
+numeroInt2 = int(input('Digite um numero inteiro:'))
+numeroReal = float(input('Digite um numero real:'))
+
+resultado1= (numeroInt1 *2)/numeroInt2
+print(resultado1)
+resultado2=(numeroInt1*3)+numeroReal
+print(resultado2)
+resultado3=numeroReal **3
+print(resultado3)
+6)
+altura = float(input('Digite sua altura em metros: '))
+pesoIdeal = (72.7*altura) - 58
+print('Peso ideal : ',pesoIdeal)
+7)
+h=float(input('Digite sua altura em metros: '))
+sexo = input('Digite M para sexo massculino\nDigite  para sexo feminino\n')
+if sexo=='M':
+    pesoIdeal=(72.7 * h) - 58
+    print(pesoIdeal)
+elif sexo == 'F':
+    pesoIdeal=(62.1*h) - 44.7
+    print(pesoIdeal)
+8)
+pesoPeixe=int(input('Digite o peso do peixe em KG:'))
+
+if pesoPeixe>50:
+    excesso=pesoPeixe -50
+    print('Excesso de: ',excesso)
+    multa=excesso * 4
+    print('A multa será de: ',multa)
+else:
+    print('Não a multa para pagar')
+9)
+ganhoPorhora= int(input('Digite o seu ganho por hora: '))
+horaPorMes=int(input('Digite quantas horas trabalha por mes: '))
+
+ganhoTotal = ganhoPorhora * horaPorMes
+print('Salario bruto: ',ganhoTotal)
+
+pagoParaINSS = ganhoTotal*0.08
+print('Valor para para o INSS:',pagoParaINSS)
+pagoParaIR = ganhoTotal*0.11
+print('Valor pago para IR:',pagoParaIR)
+
+pagoParaSindicato = ganhoTotal*0.5
+print('Valor pago para sindicato:',pagoParaSindicato)
+
+salarioLiquido = ganhoTotal -(pagoParaIR + pagoParaSindicato +pagoParaINSS)
+print("O salario liquido é: ",salarioLiquido)
+10)
+areaTotal = int(input('Digite a area total que deseja ser pintado em metros quadrado: '))
+
+litrosUtilizado = areaTotal/3
+
+latasUtilizadas = litrosUtilizado /18
+
+precoTotal = latasUtilizadas * 80
+print('O preco total sera: ',precoTotal)
+11)
+areaPintada = float(input('O valor em metros quadrados da area a ser pintada: '))
+
+litroUtilizado = areaPintada /6
+
+
+
+if litroUtilizado<=18:
+    galoesPorLitro = litroUtilizado / 3.6
+elif litroUtilizado >=18:
+    lataPorLitro=litroUtilizado/18
+12)
+
+
 
