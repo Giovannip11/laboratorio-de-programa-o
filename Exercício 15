@@ -110,6 +110,12 @@ if litroUtilizado<=18:
 elif litroUtilizado >=18:
     lataPorLitro=litroUtilizado/18
 12)
+tamanhoArquivo =float(input('Digite o tamanho do arquivo em Mb'))
+velocidadeDainternet = float(input('Digite a velociade da internet'))
+
+tempoDowload = (tamanhoArquivo / (velocidadeDainternet /8)/60)
+print('tempo de dowload é: ',tempoDowload)
+
 
 
 
