@@ -14,3 +14,24 @@ numeroDeHorasMes = int(input('Digite o numero de horas que voce trabalha por mes
 
 ganhoTotalMes = ganhoPorHora * numeroDeHorasMes
 print('O total que voce ganha e: ',ganhoTotalMes)
+3)
+numero1=int(input('Digite o primeiro numero para a operação: '))
+numero2=int(input('Digite o segundo numero para a operação: '))
+
+operacao = int(input('Digite o numero de acordo com a operação desejada[1-Adição][2-subtração][3-Multiplicação][4-divisão]\n'))
+if operacao==1 :
+    resultado=numero1 + numero2
+    print(resultado)
+elif operacao == 2:
+    resultado=numero1-numero2
+    print(resultado)
+elif operacao ==3 :
+    resultado = numero1 * numero2
+    print(resultado)
+elif operacao ==4 :
+    resultado = numero1 /numero2
+    print(resultado)
+else:
+    print('Numero inválido!')
+4)
+
