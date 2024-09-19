@@ -1,1 +1,59 @@
+1)
+turno = input('Digite o turno em que voce estuda[M-maututino][V-vespertino][N-noturno]: ')
 
+if turno=='M' or turno=='m':
+    print('Bom dia')
+elif turno =='V' or turno =='v':
+    print('Boa tarde')
+elif turno =='N' or turno =='n':
+    print('Boa noite')
+else:
+    print('Turno inválido')
+2)
+salarioAtual = float(input('Digite o seu salario atual:'))
+
+if salarioAtual <=280:
+    salarioNovo = (salarioAtual *0.20)+salarioAtual
+    print('Salario atual: ', salarioAtual)
+    print('Aumento de 20%')
+    valorAumentado = salarioNovo-salarioAtual
+    print('Aumento de:',valorAumentado)
+    print('Novo salario:', salarioNovo)
+elif salarioAtual >= 280 and salarioAtual<700:
+    salarioNovo = (salarioAtual *0.15)+salarioAtual
+    print('Salario atual: ',salarioAtual)
+    print('Aumento de 15%')
+    valorAumentado = salarioNovo - salarioAtual
+    print('Aumento de:', valorAumentado)
+    print('Novo salario:', salarioNovo)
+elif salarioAtual >=700 and salarioAtual<1500:
+    salarioNovo =(salarioAtual *0.10)+salarioAtual
+    print('Salario atual: ', salarioAtual)
+    print('Aumento de 10%')
+    valorAumentado = salarioNovo - salarioAtual
+    print('Aumento de:', valorAumentado)
+    print('Novo salario:', salarioNovo)
+elif salarioAtual >=1550:
+     salarioNovo =(salarioAtual *0.05)+salarioAtual
+     print('Salario atual: ', salarioAtual)
+     print('Aumento de 5%')
+     valorAumentado = salarioNovo - salarioAtual
+     print('Aumento de:', valorAumentado)
+     print('Novo salario:',salarioNovo)
+3)
+dia = int(input('Digite o dia da semana 1-domingo,2-segunda,3-terça,4-quarta,5-quinta,6-sexta,7-sabado:'))
+
+if dia == 1:
+    print("Domingo")
+elif dia ==2:
+    print('Segunda')
+elif dia == 3:
+    print('terça')
+elif dia == 4:
+    print('quarta')
+elif dia ==5:
+    print('quinta')
+elif dia ==6:
+    print('sexta')
+elif dia ==7:
+    print('sabado')
