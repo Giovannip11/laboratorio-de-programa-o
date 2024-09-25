@@ -1,1 +1,41 @@
+1)
+count =0
+tabuada = 1
+while count<=13:
+    tabuada = (count +1) * 13
+    print(tabuada)
+    count+=1
+2)
+menor_valor = None
+count = 0
 
+while count < 15:
+    n = int(input('Digite um número inteiro: '))
+
+
+    if menor_valor is None or n < menor_valor:
+        menor_valor = n
+
+    count += 1
+
+print('O menor valor é:', menor_valor)
+3)
+numeros = [0] * 5
+count = 0
+
+
+while count < 5:
+    n = int(input('Digite um número inteiro: '))
+    numeros[count] = n
+    count += 1
+
+
+ordenada = True
+
+for i in range(4):
+    if numeros[i] > numeros[i + 1]:
+        ordenada = False
+        break
+
+
+print(ordenada)
