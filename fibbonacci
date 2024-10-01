@@ -1,0 +1,14 @@
+i = int (input("Digite a posição que deseja saber o número da serie de fibonacci:"))
+
+f0,f1=0, 1
+
+if i==1:
+     print(f"O número na posição {i} da série de Fibonacci é: {f0}")
+elif i ==2:
+    print(f"O número na posição {i} da série de Fibonacci é: {f1}")
+else:
+    for _  in range(1,i):
+        f_next= f0+f1
+        f0,f1=f1,f_next
+       
+print(f"O número na posição {i} da série de Fibonacci é: {f1}")
