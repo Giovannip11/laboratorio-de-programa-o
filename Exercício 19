@@ -39,3 +39,7 @@ for i in range(4):
 
 
 print(ordenada)
+4)
+for i in range(500,9,-1):
+    print(i)
+5)
