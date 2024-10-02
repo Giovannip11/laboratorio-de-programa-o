@@ -102,3 +102,32 @@ while True:
     area = largura * altura
     print(f"A area é {area}")
 9)
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+while True:
+    numero = int(input("Digite um número inteiro para verificar se é primo. Para sair, digite 1000: "))
+    
+    if numero == 1000:
+        print("Programa encerrado.")
+        break
+    
+    if is_prime(numero):
+        print(f"{numero} é um número primo.")
+    else:
+        print(f"{numero} não é um número primo.")
+10)
+capacidadeMax = int(input("Digite a capacidade maxima do restaurante: "))
+capacidadeAtual=0
+
+while capacidadeAtual<capacidadeMax:
+    clientes=int(input("Digite o numero de clientes:"))
+    capacidadeAtual+=clientes
+    if capacidadeAtual>=capacidadeMax:
+        print("Limite atingido")
+        break
