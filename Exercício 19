@@ -85,3 +85,11 @@ print(f"Número de mulheres: {F}")
 print(f"Media dos homens: {mediaHomens}")
 print(f"Media das mulhers: {mediaMulheres}")
 print(f"Media total: {mediaTotal}")
+7)
+i=0
+soma=0
+while i <101:
+    soma +=i
+    i+=1
+print(soma)
+8)
