@@ -93,3 +93,12 @@ while i <101:
     i+=1
 print(soma)
 8)
+while True:
+    largura = int(input("Digite a largura: "))
+    altura = int(input("Digite a altura: "))
+    if largura == 99 or altura ==99:
+        break
+    
+    area = largura * altura
+    print(f"A area é {area}")
+9)
