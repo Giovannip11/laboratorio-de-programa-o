@@ -43,3 +43,45 @@ print(ordenada)
 for i in range(500,9,-1):
     print(i)
 5)
+i=0
+count = 0
+while i <10:
+    i+=1
+    numero=int(input("Digite numero inteiro: "))
+    if numero >=10 and numero <=50:
+        count=1+count
+
+print(count)
+6)
+i = 0
+idadeHomens = 0
+idadeMulheres = 0
+idadeTotal = 0
+M = 0
+F = 0
+
+while i < 10:
+    sexo = input("Digite o sexo da pessoa (M)masculino, (F)feminino: ").strip().upper()
+    idade = int(input("Digite a idade da pessoa: "))
+
+    if sexo == 'M':
+        idadeHomens += idade
+        M += 1
+        mediaHomens=idadeHomens/M
+    elif sexo == 'F':
+        idadeMulheres += idade
+        F += 1
+        mediaMulheres=idadeMulheres/M
+
+    idadeTotal += idade
+    i += 1
+    mediaTotal = idadeTotal/i
+
+print(f"Soma das idades dos homens: {idadeHomens}")
+print(f"Soma das idades das mulheres: {idadeMulheres}")
+print(f"Soma total das idades: {idadeTotal}")
+print(f"Número de homens: {M}")
+print(f"Número de mulheres: {F}")
+print(f"Media dos homens: {mediaHomens}")
+print(f"Media das mulhers: {mediaMulheres}")
+print(f"Media total: {mediaTotal}")
