@@ -1,0 +1,7 @@
+1)
+n = int(input("Digite números inteiros, digite 0 para finalizar: "))
+soma=0
+while n!=0:
+    soma+=n
+    n = int(input("Digite números inteiros, digite 0 para finalizar: "))
+    print(soma)
