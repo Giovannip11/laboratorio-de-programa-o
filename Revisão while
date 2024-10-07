@@ -5,3 +5,39 @@ while n!=0:
     soma+=n
     n = int(input("Digite números inteiros, digite 0 para finalizar: "))
     print(soma)
+2)
+n = int(input("Digite números negativos, digite um número positivo para finalizar: "))
+i=0
+while n<0:
+    i+=1
+    n = int(input("Digite números negativos, digite um número positivo para finalizar: "))
+print(i)
+3)
+n=int(input("Digite o palpite:"))
+numeroSecreto =11
+
+while n!=numeroSecreto:
+    if n > numeroSecreto:
+        print("O palpite é maior que o numero secreto")
+    else:
+        print("O palpite é menor que o numero secreto")
+    n=int(input("Digite o palpite:"))
+print("Voce acertou")
+4)
+numero = int(input("Digite numero.(para terminar o programa digite um número negativo): "))
+
+while numero >=0:
+    if numero % 2==0:
+        print("Número e par")
+        
+    else:
+        print("Número é impar")
+ 
+    numero = int(input("Digite numero.(para terminar o programa digite um número negativo): "))
+print("Fim do programa")
+5)
+numero = int(input("Digite o número que deseja fazer a contagem regressiva: "))
+
+while numero >=0:
+    print(numero)
+    numero-=1
