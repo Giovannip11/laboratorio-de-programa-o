@@ -20,3 +20,37 @@ if all(boolean):
     print("Tudo na lista é True")
 else:
     print("Nem todos os valores na lista são True")
+
+3)//Terminar
+valor = list(input("Digite valores:").split())
+
+if valor =="True":
+    valorBool = [valor == 'True' for valor in valor]
+    print(type(valorBool))
+
+4)
+frase=input("Digite uma frase:")
+print(len(frase))
+5)
+numeros = input("Digite vários números: ").split()
+
+
+numerosInt = [int(numero) for numero in numeros]
+
+print(max(numerosInt))
+6)
+numeros = input("Digite vários números: ").split()
+
+
+numerosInt = [int(numero) for numero in numeros]
+
+print(min(numerosInt))
+7)
+numeroNegativo = int(input("Digite um número negativo:"))
+if numeroNegativo>0:
+    print("ERRO")
+else:
+    print(abs(numeroNegativo))
+8)
+
+
