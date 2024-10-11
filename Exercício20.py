@@ -52,5 +52,9 @@ if numeroNegativo>0:
 else:
     print(abs(numeroNegativo))
 8)
+numeros=input("Digite uma serie de numeros: ").split()
 
+numerosInt = [int(numero) for numero in numeros]
+
+print(sorted(numerosInt))
 
