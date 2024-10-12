@@ -21,7 +21,8 @@ if all(boolean):
 else:
     print("Nem todos os valores na lista são True")
 
-3)//Terminar
+3)
+#Não consegui
 valor = list(input("Digite valores:").split())
 
 if valor =="True":
@@ -57,4 +58,27 @@ numeros=input("Digite uma serie de numeros: ").split()
 numerosInt = [int(numero) for numero in numeros]
 
 print(sorted(numerosInt))
+9)
+for i in range (11):
+    print(i)
+
+10)
+frase= input("Digite uma frase:")
+
+inversao = ''.join(reversed(frase))
+
+print(inversao)
+11)
+valores = input("Digite valores booleanos (True ou False): ").split()
+
+
+boolean = [valor == 'True' for valor in valores]
+
+print(bool(boolean))
+
+
+if all(boolean):
+    print("Tudo na lista é True")
+else:
+    print("Nem todos os valores na lista são True")
 
