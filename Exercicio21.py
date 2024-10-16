@@ -33,3 +33,25 @@ elif escolha ==2:
     print("A temperatura em celsius é:",resultado)
 
 3)
+def eh_primo(numero):
+    
+    if numero < 2:
+        return False
+
+    
+    for i in range(2, numero):
+        if numero % i == 0:
+            return False  
+    
+    return True 
+
+
+numero = int(input("Digite um número inteiro que deseja saber se é primo: "))
+
+
+if eh_primo(numero):
+    print(f"O número é primo.")
+else:
+    print(f"O número não é primo.")
+
+4)
