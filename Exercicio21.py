@@ -55,3 +55,12 @@ else:
     print(f"O número não é primo.")
 
 4)
+def gerar_tabuada(numero):
+    
+    for i in range(1, 11):
+        resultado = numero * i
+        print(resultado)
+
+
+numero = int(input("Digite um número: "))
+gerar_tabuada(numero)
