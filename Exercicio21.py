@@ -64,3 +64,21 @@ def gerar_tabuada(numero):
 
 numero = int(input("Digite um número: "))
 gerar_tabuada(numero)
+5)
+def contar_vogais(texto):
+    vogais = "aeiouAEIOU" 
+    contador = 0 
+    
+   
+    for char in texto:
+        if char in vogais:
+            contador += 1  
+    
+    return contador  
+
+
+texto = input("Digite uma palavra ou frase: ")
+
+
+total_vogais = contar_vogais(texto)
+print(total_vogais)
