@@ -13,3 +13,23 @@ elif media<7 and media>5:
 
 else:
     print("Reprovado")
+
+2)def celsius_para_farenheint():
+    celsius= float(input("Digite a temperatura em celsius: "))
+    F=celsius*1.8+32
+    return F
+
+def farenheint_para_celsius():
+    fahrenheit=float(input("Digite a temperatura em fahrenheit: "))
+    C = (fahrenheit-32) * (5/9)
+    return C
+
+escolha = int(input("Digite o que deseja converter 1 para celsius para farenheint, 2 para farenheint para celsius:"))
+if escolha == 1:
+    resultado=celsius_para_farenheint()
+    print("A temperatura em farenheint é:",resultado)
+elif escolha ==2:
+    resultado=farenheint_para_celsius()
+    print("A temperatura em celsius é:",resultado)
+
+3)
