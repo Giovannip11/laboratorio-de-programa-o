@@ -33,16 +33,22 @@ lista= list(n)
 lista = list(map(int,n.split()))
 n = list(set(lista))
 print(n)
-5) #Terminar em casa!!!!
-n = input("Digite uma sequência de números separados por espaço: ")
+5) 
+n = input("Digite uma sequência de elementos separados por espaço: ")
+
+lista = n.split()  
+num_ocorrencias = {}
 
 
-lista= list(n)
-num = 0
-for i in lista:
-    contagem = lista.count([num])
-    num+=1
-    print(contagem)
+for num in lista:
+    if num in num_ocorrencias:
+        num_ocorrencias[num] += 1
+    else:
+        num_ocorrencias[num] = 1
+
+
+print(num_ocorrencias)
+
 6)
 n = input("Digite uma sequência de números separados por espaço: ")
 
