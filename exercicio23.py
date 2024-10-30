@@ -33,7 +33,7 @@ lista= list(n)
 lista = list(map(int,n.split()))
 n = list(set(lista))
 print(n)
-5)Terminar em casa
+5) #Terminar em casa!!!!
 n = input("Digite uma sequência de números separados por espaço: ")
 
 
