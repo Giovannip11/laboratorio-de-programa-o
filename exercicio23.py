@@ -33,4 +33,35 @@ lista= list(n)
 lista = list(map(int,n.split()))
 n = list(set(lista))
 print(n)
-5)
+5)Terminar em casa
+n = input("Digite uma sequência de números separados por espaço: ")
+
+
+lista= list(n)
+num = 0
+for i in lista:
+    contagem = lista.count([num])
+    num+=1
+    print(contagem)
+6)
+n = input("Digite uma sequência de números separados por espaço: ")
+
+
+lista= list(n)
+lista = list(map(int,n.split()))
+lista.reverse()
+print(lista)
+7)
+n = input("Digite uma sequência de números separados por espaço: ")
+
+
+lista= list(n)
+lista = list(map(int,n.split()))
+resultado = 1
+
+for i in lista:
+    resultado*=i
+
+print(resultado)
+
+
