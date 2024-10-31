@@ -55,3 +55,26 @@ def soma_escalar():
 
 soma_escalar()
 4)
+def maior_menor():
+    vetor=[]
+    print("Digite 15 números")
+
+    for i in range(15):
+        numero=int(input())
+        vetor.append(numero)
+
+    maior = vetor[0]
+    menor = vetor[0]
+
+    for numero in vetor:
+        if numero > maior:
+           maior = numero
+
+        if numero < menor:
+            menor = numero
+
+    print("maior é:",maior)
+    print("menor é:",menor)
+
+
+maior_menor()
