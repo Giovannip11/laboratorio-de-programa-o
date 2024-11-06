@@ -124,7 +124,7 @@ def media():
     print("A media geral foi:",mediaGeral)
 
 media()
-10)//Revisar em casa
+10)
 def positivos_negativos():
     vetor=[]*10
     positivos=[]
@@ -141,4 +141,66 @@ def positivos_negativos():
     print(soma)
     print(count)
 positivos_negativos()
+11)
+def posicao_maior_menor():
+    vetor=[]*5
+    print("Digite 5 valores inteiros:\n")
+    for i in range (5):
+        n=int(input())
+        vetor.append(n)
+    maior=max(vetor)
+    menor=min(vetor)
+    print("O maior está na ",vetor.index(maior)," posição")
+    print("O menor está na ",vetor.index(menor)," posição")
+
+posicao_maior_menor()
+12)def valores_iguais():
+        vetor = []*10
+        print("Digite 10 números inteiros:")
+        for i in range(10):
+            n = int(input(f"Número {i + 1}: "))
+            vetor.append(n)
+    
+   
+        duplicados = set([x for x in vetor if vetor.count(x) > 1])
+    
+    
+        if duplicados:
+             print("Valores duplicados:", list(duplicados))
+        else:
+             print("Não há valores duplicados.")
+
+valores_iguais()
+
+13)
+def valores_iguais():
+    vetor=[]*20
+    print("Digite 20 números inteiros:\n")
+    for i in range (20):
+        n=int(input())
+        vetor.append(n)
+    
+    vetor_unicos=list(set(vetor))
+    print(vetor_unicos)
+
+valores_iguais()
+14)
+def processa_vetor():
+    vetor=[]*5
+    print("Digite números reais:\n")
+    for i in range (5):
+        n=float(input())
+        vetor.append(n)
+    escolha=int(input("Digite o que deseja fazer, 0 para sair, 1 mostrar vetor na ordem direta, 2 mostrar vetor na ordem inversa"))
+    if escolha==0:
+        print("FIM")
+    elif escolha==1:
+        print("Vetor na ordem direta:",vetor)
+    elif escolha==2:
+        vetor.reverse()
+        print("Vetor na ordem inversa:",vetor)
+    else:
+        print("Código inválido")
+processa_vetor()
+
 
