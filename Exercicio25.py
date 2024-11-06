@@ -52,3 +52,31 @@ def ler_XY():
     print(soma)
 
 ler_XY()
+6)
+def pares():
+    vetor=[]*10
+    count=0
+    par=[]
+    print("Digite 10 valores inteiros:\n")
+    for i in range (10):
+        n=int(input())
+        vetor.append(n)
+        if n % 2 ==0:
+            par.append(n)
+
+            count+=1
+    print("A quantidade de números pares é:",count)
+    print("Os números pares são: ",par)
+pares()
+7)
+def maior_menor():
+    vetor=[]*10
+    print("Digite 10 números inteiros:\n")
+    for i in range (10):
+        n=int(input())
+        vetor.append(n)
+
+    print("O maior é:",max(vetor))
+    print("O menor é:",min(vetor))
+maior_menor()
+8)
