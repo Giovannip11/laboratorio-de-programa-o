@@ -104,5 +104,21 @@ def media():
     print("A media geral foi:",mediaGeral)
 
 media()
-10)
+10)//Revisar em casa
+def positivos_negativos():
+    vetor=[]*10
+    positivos=[]
+    count=0
+    print("Digite números reais:\n")
+    for i in range(10):
+        n=float(input())
+        vetor.append(n)
+        if n <0:
+            count+=1
+        if n >0:
+            positivos.append(n)
+    soma=sum(positivos)
+    print(soma)
+    print(count)
+positivos_negativos()
 
