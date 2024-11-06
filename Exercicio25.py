@@ -1,3 +1,23 @@
+1)
+def vetor_impar():
+    vetor=[]
+    soma=0
+    print("Digite 6 números inteiros")
+
+    for i in range (6):
+        numero=int(input())
+        vetor.append(numero)
+
+        if numero % 2 !=0:
+            soma+=numero
+    
+    print(soma)
+    vetor[4]=100
+    vetor.pop()
+    print(vetor)
+    
+
+vetor_impar()
 2)
 def ler_tamanho():
     a=int(input("Digite o tamanho do vetor: "))
