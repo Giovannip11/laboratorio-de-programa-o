@@ -80,3 +80,29 @@ def maior_menor():
     print("O menor é:",min(vetor))
 maior_menor()
 8)
+def maior_posicao():
+    vetor=[]*10
+    print("Digite 10 números inteiros:\n")
+    for i in range (10):
+        n=int(input())
+        vetor.append(n)
+    maior=max(vetor)
+
+    print("O maior é:",maior,"Sua posição é:",vetor.index(maior))
+
+maior_posicao()
+9)
+def media():
+    notas=[]*15
+    print("Digite  a nota de 15 alunos:")
+    for i in range (15):
+        n=(int(input()))
+        notas.append(n)
+
+    soma=sum(notas)
+    mediaGeral=soma/15
+    print("A media geral foi:",mediaGeral)
+
+media()
+10)
+
