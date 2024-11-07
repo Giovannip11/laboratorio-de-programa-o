@@ -1,35 +1,25 @@
 1)
 import numpy as np
-def notas():
-    notas=np.array([], dtype=float)
-    alunos=np.array([], dtype=str)
-    print("Digite os nome do aluno:")
-    for i in range (5):
-        nome=(input())
-        alunos=np.append(alunos,nome)
-    print("Digite as suas notas:")
-    for i in range (4):
-        n=float(input(f"Digite a nota do aluno {alunos[i]}"))
-        notas=np.append(notas,n)
 
-    notas_alunos = np.array(alunos, notas)
-    print(notas_alunos)
+def notaAluno():
+    num_alunos=3
+    num_notas=4
 
-notas()
-ou 
-import numpy as np
-def notas():
-    alunos_notas=np.array([],[])
+    alunos_nota=np.zeros((num_alunos,num_notas))
+    nomes=[]
     print("Digite o nome dos alunos:")
-    for i in range (5):
-        nome=input()
-        alunos_notas=np.append(alunos_notas,nome)
+    for i in range (num_alunos):
+        nome=input(f"Digite a nota do aluno{i+1}: ")
+        nomes.append(nome)
+    print("\nDigite as notas dos alunos:")
+    for i in range (num_alunos):
+        for j in range(num_notas):
+            nota=float(input(f"Digite a nota {j+1} do aluno {nomes[i]}:"))
+            alunos_nota[i,j]=nota
+    print("\nMatriz de notas:")
+    for i in range (num_alunos):
+        print(f"{nomes[i]}: {alunos_nota[i]}")
 
-    print("Digite as notas do alunos")
-    for i in range (4):
-        notas=float(input(f"Digite as notas do aluno {nome[i]}"))
-        alunos_notas=np.append(alunos_notas,notas)
+notaAluno()
+2)
 
-    print(alunos_notas)
-
-notas()
