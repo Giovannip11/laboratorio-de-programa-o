@@ -16,3 +16,20 @@ def notas():
     print(notas_alunos)
 
 notas()
+ou 
+import numpy as np
+def notas():
+    alunos_notas=np.array([],[])
+    print("Digite o nome dos alunos:")
+    for i in range (5):
+        nome=input()
+        alunos_notas=np.append(alunos_notas,nome)
+
+    print("Digite as notas do alunos")
+    for i in range (4):
+        notas=float(input(f"Digite as notas do aluno {nome[i]}"))
+        alunos_notas=np.append(alunos_notas,notas)
+
+    print(alunos_notas)
+
+notas()
