@@ -49,3 +49,51 @@ def notaAluno():
 
 notaAluno()
 3)
+import numpy as np
+
+def posicao():
+    coluna=3
+    linha=4
+    tabela=np.zeros((coluna,linha))
+    for i in range(linha):
+        for j in range(coluna):
+            tabela[j,i]=j*i
+    print(tabela) 
+    
+
+posicao()
+4)
+import numpy as np
+def umAdez():
+    vetor1=np.linspace(1,10,10,dtype=int)
+    print(vetor1)
+    quadrado=vetor1**2
+    print(quadrado)
+
+umAdez()
+5)
+import numpy as np
+def aleatorio():
+    linha=3
+    coluna=3
+    matriz=np.random.randint(2,size=(linha,coluna))
+    print(matriz)
+    print(matriz.sum())
+
+
+
+    
+aleatorio()
+6)
+import numpy as np
+def somaVetor():
+    vetor1=np.random.randint(1,11,size=5)
+    vetor2=np.random.randint(1,11,size=5)
+    print(vetor1)
+    print(vetor2)
+    soma=vetor1+vetor2
+    print(f"soma é igual a{soma}")
+    produto=vetor1*vetor2
+    print(f"produto é igual a {produto}")
+
+somaVetor()
