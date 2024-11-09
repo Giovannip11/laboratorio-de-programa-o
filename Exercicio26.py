@@ -9,7 +9,7 @@ def notaAluno():
     nomes=[]
     print("Digite o nome dos alunos:")
     for i in range (num_alunos):
-        nome=input(f"Digite a nota do aluno{i+1}: ")
+        nome=input(f"Digite o nome dos alunos{i+1}: ")
         nomes.append(nome)
     print("\nDigite as notas dos alunos:")
     for i in range (num_alunos):
@@ -97,3 +97,43 @@ def somaVetor():
     print(f"produto é igual a {produto}")
 
 somaVetor()
+7)
+import numpy as np
+def aleatorios20():
+    matriz=np.random.randint(21,size=(4,4))
+    print(matriz)
+
+    submatriz=matriz[1:3,1:3]
+    print("*///////////////////")
+    print(submatriz)
+
+aleatorios20()
+8)
+import numpy as np
+def produtoMatricial():
+    tamanho=int(input("Digite a o tamanho da matriz: "))
+    matriz1=np.zeros((tamanho,tamanho),dtype=int)
+    matriz2=np.zeros((tamanho,tamanho),dtype=int)
+
+    print("\nDigite os elementos da primeira matriz:")
+    for i in range(tamanho):
+        for j in range(tamanho):
+            matriz1[i, j] = int(input(f"Elemento [{i+1},{j+1}]: "))
+    
+    print("\nDigite os elementos da segunda matriz:")
+    for i in range(tamanho):
+        for j in range(tamanho):
+            matriz2[i, j] = int(input(f"Elemento [{i+1},{j+1}]: "))
+    
+        print("\nMatriz 1:")
+    print(matriz1)
+    print("\nMatriz 2:")
+    print(matriz2)
+
+    produto = np.dot(matriz1, matriz2)
+    print("\nProduto Matricial:")
+    print(produto)
+
+produtoMatricial()
+
+
