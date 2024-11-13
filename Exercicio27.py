@@ -14,8 +14,19 @@ def lerMatriz():
 lerMatriz()
 2)
 import numpy as np
-matriz1=np.random.randint(0,11,size=(3,3))
-matriz2=np.random.randint(0,11,size=(3,3))
+def ler_matriz(nome):
+    matriz=[]
+    print("Digite os elementos da {nome} 3x3:")
+    for i in range (3):
+        linha=[]
+        for j in range (3):
+            elemento = int(input(f"Elemento [{i},{j}]: "))
+            linha.append(elemento)
+        matriz.append(linha)
+    return np.array(matriz)
+
+matriz1=ler_matriz("Matriz1")
+matriz2=ler_matriz("Matriz2")
 def somaMatriz():
     soma=matriz1+matriz2
     print(soma)
@@ -23,7 +34,7 @@ def multiplicacao():
     multi=matriz1*matriz2
     print(multi)
 def subtracao():
-    sub=matriz1=matriz2
+    sub=matriz1-matriz2
     print(sub)
 opcao=int(input("Digite a opção que deseja:\n1)Imprimir matrizes.\n2)Calcule e imprima a soma de todos os elementos das matrizes.\n3)Calcule e imprima  a multiplicação dos elementos das matrizes.\n4)Calcule e imprima a subtração dos elementos das matrizes.\n"))
 
