@@ -47,3 +47,26 @@ elif opcao==3:
     multiplicacao()
 elif opcao==4:
     subtracao()
+
+3)
+import numpy as np
+diasSemanas=7
+bairros=int(input("Quantos bairros?:"))
+
+consumo=np.random.randint(100,500,size=(diasSemanas,bairros))
+
+def consumo_medio(matriz):
+    return np.mean(matriz,axis=0)
+
+def dia_de_maior_consumo(matriz):
+    return np.argmax(np.sum(matriz,axis=1))+1
+def bairro_de_maior_consumo(matriz):
+    return np.argmax(np.sum(matriz,axis=0))+1
+def bairro_de_menor_consumo(matriz):
+    return np.argmin(np.sum(matriz,axis=0))+1
+
+print(f"Consumo médio semanal por bairro: {consumo_medio(consumo)}")
+print(f"Dia de maior consumo: {dia_de_maior_consumo(consumo)}")
+print(f"Bairro com maior consumo: {bairro_de_maior_consumo(consumo)}")
+print(f"Bairro com menor consumo: {bairro_de_menor_consumo(consumo)}")
+
