@@ -50,23 +50,21 @@ elif opcao==4:
 
 3)
 import numpy as np
-diasSemanas=7
-bairros=int(input("Quantos bairros?:"))
+diaSemana=7
+bairros=int(input("Digite o número de bairros: "))
 
-consumo=np.random.randint(100,500,size=(diasSemanas,bairros))
+consumo = np.random.randint(100,500,size=(diaSemana,bairros))
 
 def consumo_medio(matriz):
     return np.mean(matriz,axis=0)
 
-def dia_de_maior_consumo(matriz):
-    return np.argmax(np.sum(matriz,axis=1))+1
-def bairro_de_maior_consumo(matriz):
-    return np.argmax(np.sum(matriz,axis=0))+1
-def bairro_de_menor_consumo(matriz):
-    return np.argmin(np.sum(matriz,axis=0))+1
+def maior_consumo(matriz):
+   return np.argmax(np.sum(matriz,axis=1))
 
-print(f"Consumo médio semanal por bairro: {consumo_medio(consumo)}")
-print(f"Dia de maior consumo: {dia_de_maior_consumo(consumo)}")
-print(f"Bairro com maior consumo: {bairro_de_maior_consumo(consumo)}")
-print(f"Bairro com menor consumo: {bairro_de_menor_consumo(consumo)}")
-
+def menor_consumo(matriz):
+    return np.argmin(np.sum(matriz,axis=1))
+    
+    
+print(f"Consumo médio por bairro: {consumo_medio(consumo)}")
+print(f"Dia da semana com maior consumo: {maior_consumo(consumo)}")
+print(f"Dia da semana com menor consumo: {menor_consumo(consumo)}")
